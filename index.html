@@ -80,6 +80,7 @@
         </h3>
         <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Senior Embedded Developer</h1>
         <p class="max-w-2xl mx-auto font-Ovo">I am an Embedded developer, having 3 year and 5 months of extensive experience in different technologies.</p>
+        <p class="max-w-2xl mx-auto font-Ovo text-sm text-gray-600 dark:text-gray-300">C | Embedded C | FreeRTOS | STM32 | Linux | YOCTO | MODBUS | IoT | GSM | AWS</p>
 
         <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
             <a href="#contact"
@@ -141,11 +142,11 @@
                     </li>
                     <li
                         class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./assets/firebase.png" alt="STM32CubeIDE" class="w-5 sm:w-7">
+                        <img src="./assets/cubeIDE.png" alt="STM32CubeIDE" class="w-5 sm:w-7">
                     </li>
                     <li
                         class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./assets/mongodb.png" alt="Altium Designer" class="w-5 sm:w-7">
+                        <img src="./assets/Yocto_Project_logo.png" alt="Altium Designer" class="w-5 sm:w-7">
                     </li>
                     <li
                         class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
@@ -160,6 +161,38 @@
         </div>
     </div>
 
+    <!-- ----- services section ------ -->
+    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">What I Offer</h4>
+        <h2 class="text-center text-5xl font-Ovo">My Services</h2>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto my-12">
+            <li class="border border-gray-300 dark:border-white/30 rounded-xl p-8 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
+                <h3 class="text-xl font-semibold text-gray-700 dark:text-white mb-3"> Embedded Systems Development </h3>
+                <p class="text-gray-600 text-sm dark:text-white/80"> Design and development of embedded systems using STM32, RP2040, and ARM-based boards.</p>
+            </li>
+            <li class="border border-gray-300 dark:border-white/30 rounded-xl p-8 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
+                <h3 class="text-xl font-semibold text-gray-700 dark:text-white mb-3"> Bootloader & OTA </h3>
+                <p class="text-gray-600 text-sm dark:text-white/80"> Custom bootloader development with over-the-air firmware updates and rollback mechanisms.</p>
+            </li>
+            <li class="border border-gray-300 dark:border-white/30 rounded-xl p-8 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
+                <h3 class="text-xl font-semibold text-gray-700 dark:text-white mb-3"> IoT & Cloud Integration </h3>
+                <p class="text-gray-600 text-sm dark:text-white/80"> Connect devices to cloud platforms (AWS, MQTT) with MODBUS, GSM, and Ethernet protocols. </p>
+            </li>
+            <li class="border border-gray-300 dark:border-white/30 rounded-xl p-8 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
+                <h3 class="text-xl font-semibold text-gray-700 dark:text-white mb-3"> Real-Time Operating Systems </h3>
+                <p class="text-gray-600 text-sm dark:text-white/80"> FreeRTOS and RTOS implementation for deterministic, real-time embedded applications. </p>
+            </li>
+            <li class="border border-gray-300 dark:border-white/30 rounded-xl p-8 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
+                <h3 class="text-xl font-semibold text-gray-700 dark:text-white mb-3">Linux & YOCTO Development</h3>
+                <p class="text-gray-600 text-sm dark:text-white/80">Custom Linux builds, device tree modifications, and YOCTO-based embedded Linux systems.</p>
+            </li>
+            <li class="border border-gray-300 dark:border-white/30 rounded-xl p-8 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
+                <h3 class="text-xl font-semibold text-gray-700 dark:text-white mb-3">Driver Development & Protocol Stack</h3>
+                <p class="text-gray-600 text-sm dark:text-white/80">Hardware drivers for I2C, SPI, UART, CAN, and protocol stack implementations (LwIP, FatFS).</p>
+            </li>
+        </ul>
+    </div>
+
     <!-- My Work Section -->
     <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
         <h2 class="text-center text-5xl font-Ovo">My latest works</h2>
@@ -167,12 +200,12 @@
             collection of projects showcasing my expertise in cutting-edge embedded systems development.</p>
         <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
             <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                style="background-image: url('./assets/work-2.png');">
+                style="background-image: url('./assets/gateway.jpg');">
                 <div
                     class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                     <div>
                         <h2 class="font-semibold">Industrial IoT Gateway</h2>
-                        <p class="text-sm text-gray-700">MODBUS, RS485, GSM, Ethernet, SDCARD & AWS Cloud</p>
+                        <p class="text-sm text-gray-700">MODBUS (TCP & RTU), RS485, GSM, Ethernet, SDCARD & AWS Cloud</p>
                     </div>
                     <div
                         class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
@@ -195,7 +228,7 @@
                 </div>
             </div>
             <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                style="background-image: url('./assets/work-3.png');">
+                style="background-image: url('./assets/BridgEth_kompl-75.jpg');">
                 <div
                     class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                     <div>
@@ -209,12 +242,12 @@
                 </div>
             </div>
             <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                style="background-image: url('./assets/work-4.png');">
+                style="background-image: url('./assets/pico.jpg');">
                 <div
                     class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                     <div>
-                        <h2 class="font-semibold">Power Optimization Rpi CM4</h2>
-                        <p class="text-sm text-gray-700">Kernel configs, Power Management</p>
+                        <h2 class="font-semibold">USB2Ethernet</h2>
+                        <p class="text-sm text-gray-700">RP2040 PICO, LAN865x, Single-Pair Ethernet (SPE)</p>
                     </div>
                     <div
                         class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
@@ -223,7 +256,7 @@
                 </div>
             </div>
             <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                style="background-image: url('./assets/work-1.png');">
+                style="background-image: url('./assets/radar.jpg');">
                 <div
                     class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                     <div>
