@@ -36,3 +36,50 @@ window.addEventListener('scroll', () => {
         navLink.classList.add('bg-white', 'shadow-sm', 'bg-opacity-50', 'dark:border', 'dark:border-white/30', "dark:bg-transparent");
     }
 })
+
+function toggleProjects() {
+    const btn = document.getElementById('toggleProjectsBtn');
+    const details = document.getElementById('projectDetails');
+    const textSpan = document.getElementById('toggleProjectsText');
+    const imgLight = document.getElementById('toggleProjectsImgLight');
+    const imgDark = document.getElementById('toggleProjectsImgDark');
+    if (!btn || !details || !textSpan) return;
+
+    try {
+        console.log('toggleProjects clicked');
+
+    // Toggle visibility
+    const nowHidden = details.classList.toggle('hidden');
+
+    if (nowHidden) {
+        btn.setAttribute('aria-expanded', 'false');
+        textSpan.textContent = 'Show more';
+        if (imgLight) imgLight.classList.remove('rotate-90');
+        if (imgDark) imgDark.classList.remove('rotate-90');
+    } else {
+        btn.setAttribute('aria-expanded', 'true');
+        textSpan.textContent = 'Show less';
+        if (imgLight) imgLight.classList.add('rotate-90');
+        if (imgDark) imgDark.classList.add('rotate-90');
+    }
+    } catch (e) {
+        console.error('toggleProjects error', e);
+    }
+}
+
+// Try to bind immediately; if element isn't present yet, bind on window load as a fallback.
+function bindToggleButton() {
+    const btn = document.getElementById('toggleProjectsBtn');
+    if (btn) {
+        btn.addEventListener('click', toggleProjects);
+        console.log('toggleProjectsBtn bound');
+        return true;
+    }
+    return false;
+}
+
+if (!bindToggleButton()) {
+    window.addEventListener('load', () => {
+        if (!bindToggleButton()) console.warn('toggleProjectsBtn not found after window load');
+    });
+}

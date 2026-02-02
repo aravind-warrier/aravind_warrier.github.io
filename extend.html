@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARAVIND P V — Projects</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
+    <div class="w-11/12 max-w-4xl mx-auto py-12">
+        <a href="index.html" class="inline-block mb-8 px-4 py-2 border rounded-full hover:bg-slate-100/70 dark:hover:bg-darkHover">← Back</a>
+
+        <h1 class="text-4xl mb-6 font-Ovo">Projects — Details</h1>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">APM For Monitoring Viewership status</h2>
+            <p class="text-justify">Developed the people-meter system that captures HDMI output and sends viewership data to the cloud using an onboard GSM module. I debugged and fixed the MCU <strong>SPI handler</strong>, implemented an interrupt-driven SPI solution, and developed a custom MCU <strong>bootloader supporting OTA</strong> from a Raspberry Pi with rollback handling. Skills gained: <strong>embedded C, SPI debugging, bootloader development, OTA mechanisms, GSM integration</strong>.</p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">Industrial IoT Gateway</h2>
+            <p class="text-justify">Built a gateway supporting MODBUS over RS485 and MODBUS-TCP, with GSM and Ethernet fallback to reliably forward sensor data to AWS for analytics. I designed the project plan, collaborated on hardware bring-up, and implemented drivers and stacks including <strong>LwIP, USB, FatFS</strong> on STM32H5 series. Skills gained: <strong>MODBUS, RS485, TCP/IP (LwIP), STM32 driver development, cloud integration (AWS)</strong>.</p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">BridgEth Controller</h2>
+            <p class="text-justify">Designed a compact industrial controller using Raspberry Pi CM4 and RP2040, implementing state machines and reliable communication over SPE, Ethernet and MQTT. I developed the FreeRTOS-based framework, scheduling, and IO handling for sensors and actuators, and ensured fault-tolerant DIN rail communications. Skills gained: <strong>FreeRTOS, state machine design, MQTT, real-time systems</strong>.</p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">Power Optimization on Raspberry Pi (CM4)</h2>
+            <p class="text-justify">Optimized power by disabling unused hardware/software stacks, editing device trees, and building an optimized kernel to reduce consumption. I removed network/WLAN/USB stacks, tuned kernel configs, and measured power savings using Type-C testers. Skills gained: <strong>Linux kernel configuration, device tree modification, power management, measurement and validation</strong>.</p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">Sensor Fusion & Yocto/Peripheral Integrations</h2>
+            <p class="text-justify">Integrated radar and camera data fusion and developed Yocto images and STM32 sensor drivers (ADXL345), enabling reliable sensor calibration and data parsing. Work included Yocto recipe creation, calibration for camera-radar alignment, and accelerometer I2C integration producing JSON-formatted telemetry. Skills gained: <strong>Yocto, sensor fusion, I2C/STM32, data calibration, build systems</strong>.</p>
+        </section>
+
+    </div>
+    <script>
+        // Minimal script to support dark theme preference like the main site
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        }
+    </script>
+</body>
+
+</html>
